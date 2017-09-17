@@ -1,0 +1,42 @@
+@font-face { font-family: Nexa; src: url('font/Nexa-Light.otf'); } 
+@font-face { font-family: Nexa; font-weight: bold; src: url('font/Nexa-Bold.otf');}
+
+body, html {
+    height: 100%;
+    width: 100%;
+    font-family: Nexa!important;
+}
+#map {
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    position: relative;
+}
+#above {
+    position: absolute;
+    top: 0px;
+    height: 100%;
+    width: 100%;
+    z-index: 99;
+    pointer-events: none;
+}
+
+
+
+
+
+
+/*REMOVES BRANDING*/
+/*This breaks googles code of conduct*/
+
+/* 
+a[href^="http://maps.google.com/maps"]{display:none !important}
+a[href^="https://maps.google.com/maps"]{display:none !important}
+
+.gmnoprint a, .gmnoprint span, .gm-style-cc {
+    display:none;
+}
+.gmnoprint div {
+    background:none !important;
+}
+*/
